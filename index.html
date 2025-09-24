@@ -2,43 +2,104 @@
 
 <html>
 	<head>
-		<link rel="stylesheet" type="" href="/css/styles.css">
+		<link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+		
+		<link rel="stylesheet" type="" href="./css/global.css">
+		<link rel="stylesheet" type="" href="./css/shared.css">
+		<link rel="stylesheet" type="" href="./css/home.css">
+		
+		
+		
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+	
 		
 	</head>
 	<body>
 		<header>
 			<!-- branding/logo	 -->
 			
-
+			<img class="logo display-in-dark-mode" src="./assets/images/logo-dark.png" alt="Graham Young Logo">
+			<img class="logo display-in-light-mode" src="./assets/images/logo-light.png" alt="Graham Young Logo">
 
 		</header>
-		<div id="random">
-			
-			lorem ipsum blah blah blah
-		</div>
 		<nav>
-			<!-- link to projects and landing page -->
-			<a id="projects-link" href="/pages/projects.html">Projects</a>
-			<a id="home-link" href="index.html">Home</a>
+			<ul>
+				<!-- link to projects and landing page -->
+				<a id="home-link" href="index.html">Home</a>
+				<a id="projects-link" href="/pages/projects.html">Projects</a>
+				
+			</ul>
 		</nav>
 		<main>
 			<!-- hero section -->
 			<section id="hero">
+				<!-- TODO image of some sort -->
+				<h1> Hi, I'm Graham </h1>
+				<p>I'm a Graduate Student at UNCC and Full-Stack Developer</p>
+				<a href="#contact">
+					<p>Work with me</p>
+					<i class="fa-solid fa-arrow-down"></i>
+				</a>
+				<img id="hero-image" src="./assets/images/hero-image.jpg" alt="Hero Image">
 				
 			</section>
 			<!-- about section -->
 			<section id="about">
+				<h3>About Me</h3>
+
+				<p id="about-text">
+				 As a Graduate Student, I'm currently studying Front-End Web Design and Development. As a Full-Stack Developer, I have a passion for coding and building responsive full-stack applications. My unique ability to combine strong problem solving, logic, and creativity motivates me to be always learning and growing. When I'm not at my computer, I spend my time reading, fishing, or playing my mandolin.
+				</p>
+				<h3>My Skills</h3>
+				<div id="about-skills">
+					<h5>Programming Languages</h5>
+					<ul>
+						<li>Java</li>
+						<li>Javascript</li>
+						<li>HTML</li>
+						<li>CSS</li>
+						<li>Python</li>
+						<li>Rust</li>
+					</ul>
+					<h5>Development Tools</h5>
+					<ul>
+						<li>Neovim</li>
+						<li>AI</li>
+						<li>Eclipse</li>
+						<li>VSCode</li>
+	
+						
+					</ul>
+					<h5>Other Technologies</h5>
+					<ul>
+						<li>React</li>
+						<li>SpringBoot</li>
+						<li>Yew</li>
+						<li>Next.js</li>
+					</ul>
+					
+				</div>
+				
+				
 
 			</section>
 			<!-- contact section -->
 			<section id="contact">
-				<form>
+				<form class="contact-form">
 					
+					<input type="email" name="email" value="" placeholder="Enter your email" required>
+					<input type="text" name="name" value="" placeholder="Enter your Name" required>
+					<textarea rows="5" cols="30">
+					</textarea>
 				</form>
 			</section>
 			
 		</main>
 		<footer>
+			<div class="social-icons">
+				<i class="fa-brands fa-github"></i>
+				<i class="fa-brands fa-linkedin"></i>
+			</div>
 			
 		</footer>
 	</body>
