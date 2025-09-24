@@ -1,0 +1,97 @@
+:root {
+	--clr-primary: hsl(203, 70%, 53%);
+	--clr-secondary: hsl(203, 70%, 75%);
+	--clr-neutral: hsl(203, 70%, 95%);
+	--clr-black: hsl(203, 25%, 12%);
+	--clr-accent: hsl(28, 60%, 45%);
+	--fs-h1: 2.027rem ;
+	--fs-h2: 1.802rem;
+	--fs-h3: 1.602rem;
+	--fs-h4: 1.424rem;
+	--fs-h5: 1.266rem;
+	--fs-h6: 1.125rem;
+	--fs-p: 1rem;
+	--fs-small: 0.889rem;
+
+
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--clr-bg: var(--clr-black);
+		--clr-text: var(--clr-neutral);
+
+	}
+	.display-in-dark-mode {
+		display: block;
+	}
+	.display-in-light-mode {
+		display: none;
+	}
+
+}
+@media (prefers-color-scheme: light) {
+	:root {
+		--clr-bg: var(--clr-neutral);
+		--clr-text: var(--clr-black);
+	}
+	.display-in-light-mode {
+		display: block;
+	}
+	.display-in-dark-mode {
+		display: none;
+	}
+}
+
+
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: var(--clr-bg);
+	color: var(--clr-text);
+	line-height: 1.5;
+	font-size: var(--fs-p);
+	display: grid;
+	margin: 0 auto;
+	gap: 0.5rem;
+	min-height: 100vh;	
+	
+}
+
+h1 {
+	font-size: var(--fs-h1);
+	font-weight: 700;
+}
+
+h2 {
+	font-size: var(--fs-h2);
+	font-weight: 600;
+}
+
+h3 {
+	font-size: var(--fs-h3);
+	font-weight: 500;
+}
+
+h4 {
+	font-size: var(--fs-h4);
+}
+
+h5 {
+	font-size: var(--fs-h5);
+}
+
+h6 {
+	font-size: var(--fs-h6);
+}
+
+body, h4, h5, h6 {
+	font-weight: 400;
+}
+
