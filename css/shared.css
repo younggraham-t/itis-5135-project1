@@ -1,0 +1,46 @@
+/* Header */
+header {
+	display: flex;
+	align-items: center;
+	justify-items: center;
+	width: 100vw;
+}
+
+.logo {
+	width: 15%;
+	margin: 0 auto;
+}
+
+/* Nav Bar */
+
+nav {
+	background-color: var(--clr-bg);
+	position: sticky;
+	top: 0;
+	display: grid;
+	width: 100vw;
+	align-items: center;
+	justify-items: center;
+
+}
+nav ul {
+	 width: 75%;
+	 margin: 0 auto;
+	 display: flex;
+	 justify-content: space-around;
+}
+
+a {
+	color: var(--clr-accent);
+	text-decoration: none;
+}
+
+nav ul a {
+	background-color: var(--clr-bg);
+	font-size: var(--fs-h5);
+	font-weight: 700;
+	padding: 0.15rem;
+	border-radius: 5px;
+}
+
+/* Footer */
