@@ -1,8 +1,11 @@
 :root {
 	--clr-primary: hsl(203, 70%, 53%);
 	--clr-secondary: hsl(203, 70%, 75%);
+	--clr-secondary75: hsla(203, 70%, 75%, 75%);
 	--clr-neutral: hsl(203, 70%, 95%);
+	--clr-neutral75: hsla(203, 70%, 95%, 75%);
 	--clr-black: hsl(203, 25%, 12%);
+	--clr-black75: hsla(203, 25%, 12%, 75%);
 	--clr-accent: hsl(28, 60%, 45%);
 	--fs-h1: 2.027rem ;
 	--fs-h2: 1.802rem;
@@ -19,7 +22,10 @@
 @media (prefers-color-scheme: dark) {
 	:root {
 		--clr-bg: var(--clr-black);
+		--clr-bg75: var(--clr-black75);
 		--clr-text: var(--clr-neutral);
+		--clr-text75: var(--clr-neutral75);
+		
 
 	}
 	.display-in-dark-mode {
@@ -33,7 +39,10 @@
 @media (prefers-color-scheme: light) {
 	:root {
 		--clr-bg: var(--clr-neutral);
+		--clr-bg75: var(--clr-neutral75);
 		--clr-text: var(--clr-black);
+		--clr-text75: var(--clr-black75);
+		
 	}
 	.display-in-light-mode {
 		display: block;
@@ -59,7 +68,6 @@ body {
 	font-size: var(--fs-p);
 	display: grid;
 	margin: 0 auto;
-	gap: 0.5rem;
 	min-height: 100vh;	
 	
 }
@@ -95,3 +103,7 @@ body, h4, h5, h6 {
 	font-weight: 400;
 }
 
+main {
+	display: grid;
+	gap: 1rem;
+}
