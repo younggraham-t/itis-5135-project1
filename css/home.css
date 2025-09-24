@@ -80,6 +80,7 @@ section#contact div.contact-input-field {
 }
 
 section#contact input, section#contact textarea {
+	padding: 0.25rem;
 	font-size: var(--fs-h6);
 	border: none;
 	border-radius: 5px;
