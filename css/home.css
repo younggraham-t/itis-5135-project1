@@ -1,12 +1,4 @@
-/* Hero Section */
-
-#hero-image {
-	width: 100%;
-	height: auto;
-}
-
-
-section#hero {
+section {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -14,6 +6,17 @@ section#hero {
 	gap: 0.25rem;
 	text-align: center;
 }
+/* Hero Section */
+
+#hero-image {
+	width: 100%;
+	height: auto;
+}
+
+section#hero h1 {
+	color: var(--clr-primary);
+}
+
 
 section#hero p {
 	width: 90%;
@@ -37,3 +40,65 @@ section#hero a i {
 }
 
 /* About Section */
+
+
+section#about {
+	display: grid;
+	grid-template-rows: auto 1fr;
+
+
+}
+
+section#about div#about-skills ul {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	justify-content: center;
+	margin: 0 auto;
+	width: min(100vw, 750px);
+}
+
+section#about ul {
+	list-style-type: none;
+}
+
+
+/* Contact Section */
+
+section#contact form {
+	width: 75%;
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 0.5rem;
+	font-size: var(--fs-h5);
+	
+}
+
+section#contact div.contact-input-field {
+	display: grid;
+	text-align: left;
+	margin-left: 1rem;
+
+}
+
+section#contact input, section#contact textarea {
+	font-size: var(--fs-h6);
+	border: none;
+	border-radius: 5px;
+	width: 95%;
+	margin-right: auto;
+	background-color: var(--clr-text75);
+	color: var(--clr-bg);
+}
+
+section#contact div.contact-input-field textarea {
+	height: 25vh;
+}
+
+section#contact form button {
+	padding: 0.25rem;
+	margin: 0 auto;
+	background-color: var(--clr-accent);
+	border: none;
+	border-radius: 2px;
+	font-size: var(--fs-h6);
+}
