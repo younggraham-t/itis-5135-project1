@@ -54,28 +54,33 @@
 				<div id="about-skills">
 					<h5>Programming Languages</h5>
 					<ul>
-						<li>Java</li>
-						<li>Javascript</li>
-						<li>HTML</li>
-						<li>CSS</li>
-						<li>Python</li>
-						<li>Rust</li>
+						<li><i class="fa-brands fa-java"></i>Java</li>
+						<li><i class="fa-brands fa-node-js"></i>Javascript</li>
+						<li><i class="fa-brands fa-node-js"></i>Typescript</li>
+						<li><i class="fa-brands fa-html5"></i>HTML5</li>
+						<li><i class="fa-brands fa-css3-alt"></i>CSS</li>
+						<li><i class="fa-brands fa-rust"></i>Rust</li>
 					</ul>
 					<h5>Development Tools</h5>
 					<ul>
-						<li>Neovim</li>
-						<li>AI</li>
-						<li>Eclipse</li>
-						<li>VSCode</li>
-	
+						<li><i class="fa-solid fa-file-lines"></i>Neovim</li>
+						<li><i class="fa-brands fa-git-alt"></i>Git/GitHub</li>
+						<li><i class="fa-solid fa-code-branch"></i>AI</li>
+						<li><i class="fa-brands fa-java"></i>Eclipse</li>
+						<li><i class="fa-solid fa-file-lines"></i>VSCode</li>
+						<li><i class="fa-brands fa-java"></i>IntelliJ</li>
+
+
 						
 					</ul>
 					<h5>Other Technologies</h5>
 					<ul>
-						<li>React</li>
-						<li>SpringBoot</li>
-						<li>Yew</li>
-						<li>Next.js</li>
+						<li><i class="fa-brands fa-react"></i>React</li>
+						<li><i class="fa-brands fa-node-js"></i>Next.js</li>
+						<li><i class="fa-brands fa-java"></i>SpringBoot</li>
+						<li><i class="fa-brands fa-node-js"></i>NodeJS</li>
+						<li><i class="fa-brands fa-node-js"></i>Express</li>
+						<li><i class="fa-solid fa-database"></i>Databases</li>
 					</ul>
 					
 				</div>
@@ -85,12 +90,23 @@
 			</section>
 			<!-- contact section -->
 			<section id="contact">
+				<h3>Contact Me</h3>
 				<form class="contact-form">
 					
-					<input type="email" name="email" value="" placeholder="Enter your email" required>
-					<input type="text" name="name" value="" placeholder="Enter your Name" required>
-					<textarea rows="5" cols="30">
-					</textarea>
+					<div class="contact-input-field">
+						<label for="contact-name">Name*</label>
+						<input type="text" name="name" id="contact-name" value="" required>
+						
+					</div>
+					<div class="contact-input-field">
+						<label for="contact-email">Email*</label>
+						<input type="email" name="email" id="contact-email" value="" required>
+					</div>
+					<div class="contact-input-field">
+						<label for="contact-message">Message*</label>
+						<textarea name="message" id="contact-message" required></textarea>
+					</div>
+					<button type="submit">Send</button>
 				</form>
 			</section>
 			
