@@ -1,0 +1,39 @@
+/* Hero Section */
+
+#hero-image {
+	width: 100%;
+	height: auto;
+}
+
+
+section#hero {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 0.25rem;
+	text-align: center;
+}
+
+section#hero p {
+	width: 90%;
+}
+
+section#hero a {
+	background-color: var(--clr-bg);
+	width: 100vw;
+	display: flex;
+	margin: 0 auto;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+section#hero a i {
+	color: var(--clr-bg);
+	background-color: var(--clr-accent);
+	padding: 0.15rem;
+	border-radius: 50%;
+}
+
+/* About Section */
