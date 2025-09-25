@@ -18,22 +18,24 @@
 		<header>
 			<!-- branding/logo	 -->
 			
-			<img class="logo display-in-dark-mode" src="./assets/images/logo-dark.png" alt="Graham Young Logo">
-			<img class="logo display-in-light-mode" src="./assets/images/logo-light.png" alt="Graham Young Logo">
-
-		</header>
-		<nav>
-			<ul>
-				<!-- link to projects and landing page -->
-				<a id="home-link" href="index.html">Home</a>
-				<a id="projects-link" href="/pages/projects.html">Projects</a>
+			<div id="logo-container">
+				<img class="logo display-in-dark-mode" src="./assets/images/logo-dark.png" alt="Graham Young Logo">
+				<img class="logo display-in-light-mode" src="./assets/images/logo-light.png" alt="Graham Young Logo">
 				
-			</ul>
-		</nav>
+			</div>
+
+			<nav>
+				<ul>
+					<!-- link to projects and landing page -->
+					<a id="home-link" href="index.html">Home</a>
+					<a class="projects-link" href="/pages/projects.html">Projects</a>
+					
+				</ul>
+			</nav>
+		</header>
 		<main>
 			<!-- hero section -->
 			<section id="hero">
-				<!-- TODO image of some sort -->
 				<h1> Hi, I'm Graham </h1>
 				<p>I'm a Graduate Student at UNCC and Full-Stack Developer</p>
 				<a href="#contact">
@@ -108,14 +110,38 @@
 					</div>
 					<button type="submit">Send</button>
 				</form>
+				<div class="contact-info-container">
+					<h6>Or shoot me a message:</h6>
+					<div class="contact-info-item">
+						<p>Phone</p>
+						<p>(704) 617-2773</p>
+					</div>
+					<div class="contact-info-item">
+						<p>Email</p>
+						<p>youngraham.t@gmail.com</p>
+					</div>
+				</div>
 			</section>
 			
 		</main>
 		<footer>
-			<div class="social-icons">
-				<i class="fa-brands fa-github"></i>
-				<i class="fa-brands fa-linkedin"></i>
+
+			<div class="projects-link-container">
+				<h5>Check out my</h5>
+				<a class="projects-link" href="/pages/projects.html">Projects</a>
 			</div>
+			
+			<div class="social-icons">
+				<h5>Find me on Social Media</h5>
+				<a href="https://github.com/younggraham-t" target="blank_">
+					<i class="fa-brands fa-github"></i>
+				</a>
+				<a href="https://www.linkedin.com/in/graham-t-young/" target="blank_">
+					<i class="fa-brands fa-linkedin"></i>
+				</a>
+			</div>
+			
+			<p>This Site was Handcrafted by Me. &copy;2025</p>
 			
 		</footer>
 	</body>
