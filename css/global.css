@@ -25,6 +25,7 @@
 		--clr-bg75: var(--clr-black75);
 		--clr-text: var(--clr-neutral);
 		--clr-text75: var(--clr-neutral75);
+		--clr-secondary-text: var(--clr-secondary75);
 		
 
 	}
@@ -42,6 +43,7 @@
 		--clr-bg75: var(--clr-neutral75);
 		--clr-text: var(--clr-black);
 		--clr-text75: var(--clr-black75);
+		--clr-secondary-text: var(--clr-black75);
 		
 	}
 	.display-in-light-mode {
@@ -62,8 +64,9 @@
 }
 
 body {
+	font-family: Lato, 'Open Sans', sans-serif;
 	background-color: var(--clr-bg);
-	color: var(--clr-text);
+	color: var(--clr-text75);
 	line-height: 1.5;
 	font-size: var(--fs-p);
 	display: grid;
@@ -84,6 +87,7 @@ h2 {
 }
 
 h3 {
+	color: var(--clr-text);
 	font-size: var(--fs-h3);
 	font-weight: 500;
 }
@@ -107,4 +111,17 @@ body, h4, h5, h6 {
 main {
 	display: grid;
 	gap: 1rem;
+}
+
+a {
+	color: var(--clr-accent);
+	text-decoration: none;
+}
+
+a:hover {
+	color: var(--clr-secondary);
+}
+
+a:active {
+	color: var(--clr-primary);
 }
