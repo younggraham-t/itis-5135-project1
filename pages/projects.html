@@ -1,23 +1,138 @@
 <!DOCTYPE html>
 
-<html>
+<html lang=en>
 	<head>
+		<title>Graham Young - Projects</title>
+
+		<meta charset="utf-8">
+		<link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico">
+		
+		<link rel="stylesheet" type="text/css" href="../css/global.css">
+		<link rel="stylesheet" type="text/css" href="../css/shared.css">
+		<link rel="stylesheet" type="text/css" href="../css/projects.css">
+		
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+		
+	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+		<!-- I was having issues with getting the responsive mode in firefox to display properly and so google told me to put this in -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		
 	</head>
 	<body>
 		<header>
 			<!-- branding/logo	 -->
 			
+			<div id="logo-container">
+				<img class="logo display-in-dark-mode" src="../assets/images/logo-dark.png" alt="Graham Young Logo">
+				<img class="logo display-in-light-mode" src="../assets/images/logo-light.png" alt="Graham Young Logo">
+				
+			</div>
 
+			<nav>
+				<div>
+					<a id="home-link" href="../index.html">Home</a>
+					<a class="projects-link" href="./projects.html">Projects</a>
+					
+				</div>
+			</nav>
 		</header>
-		<nav>
-			<!-- link to projects and landing page -->
-			<a id="projects-link" href="/pages/projects.html">Projects</a>
-			<a id="home-link" href="../index.html">Home</a>
-		</nav>
 		<main>
+			<section id="projects-container">
+			<h1 id="projects-header">Some of my Favorite Projects</h1>
+					
+				<article class="project">
+					<div class="project-image-container">
+						<img src="../assets/images/projects/scottayoungwebsite.png" alt="Scott A Young Website">
+						
+					</div>
+					<div class="project-text">
+						<h3>Scott A. Young Website</h3>
+						<p>For this project, I worked with a client to create a full-stack web application to
+						advertise his new book. I worked with React on the front-end, and used PHP for the back-end code.</p>
+						<a href="https://scottayoungauthor.com/" target="blank_">Live Site<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+					</div>
+				</article>
+
+				<article class="project">
+					<div class="project-image-container">
+						<img src="../assets/images/projects/grahamyoungwebsite.png" alt="Graham Young Website">
+						
+					</div>
+					<div class="project-text">
+						<h3>Portfolio Site</h3>
+						<p>For this project, I created a portfolio website in NextJS. There is a lot of functionality inculding a contact form,
+						several links to my social media pages, and a download for my resume. I'm especially happy with the gradient borders I was able to create.</p>
+						<a href="https://www.grahamtyoung.com" target="blank_">Live Site<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+					</div>
+				</article>
+
+				<article class="project">
+					<div class="project-image-container">
+						<img src="../assets/images/projects/nextjschess.png" alt="Chess Board with Moves and Move List">
+						
+					</div>
+					<div class="project-text">
+						<h3>Chess Project</h3>
+						<p>This is another project I developed using NextJS. The goal of this project was to create a chess game that could be played 
+						against a chess engine in the browser. After I had got the chess game itself worked out, I lost intrest in the rest of the 
+						functionality I had originally wanted, but I still think it's in a pretty good state.</p>
+						<a href="https://github.com/younggraham-t/nextjs-chess" target="blank_">GitHub<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+					</div>
+				</article>
+
+				<article class="project">
+					<div class="project-image-container">
+						<img src="../assets/images/projects/blackjackrust.png" alt="A game of Blackjack with the player hand winning.">
+						
+					</div>
+					<div class="project-text">
+						<h3>BlackJack</h3>
+						<p>This is a project I did during undergrad for my Programming Languages course. The final project was to create a project in 
+						a language that I didn't know, so I chose Rust because I had heard a lot of great things about the language and it intrigued me.
+						The project has two main pieces. The first is a backend that handles all the game logic, and the second is a front-end
+						to handle displaying the information in the browser. At the time I had very little experience with CSS and if I went back to this
+						I would style it better.</p>
+						<a href="https://github.com/younggraham-t/blackjack-rust" target="blank_">GitHub<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+					</div>
+				</article>
+
+				<article class="project">
+					<div class="project-image-container">
+						<img src="../assets/images/projects/8queensai.png" alt="A visual of the output of a python script">
+						
+					</div>
+					<div class="project-text">
+						<h3>8 Queens AI Project</h3>
+						<p>This is a project that I completed for my Artificial Intelligence class in undergrad. The Assignment was to create multiple different
+						AI algorithms in Python to solve the 8 Queens Problem. The 8 Queens problem involves finding a position for 8 Queens on a chess board where they 
+						do not attack each other. The image shows the initial prompt and a small portion of a solution done by one of the algorithms.</p>
+						<a href="https://github.com/younggraham-t/8queensAI/" target="blank_">GitHub<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+					</div>
+				</article>
+			</section>	
+
+
 		</main>
 		<footer>
+
+			<div class="footer-link-container">
+				<h5>Learn More</h5>
+				<a class="footer-link" href="../index.html">Home</a>
+			</div>
+			
+			<div class="social-icons">
+				<h5>Find me on Social Media</h5>
+				<a href="https://github.com/younggraham-t" target="blank_">
+					<i class="fa-brands fa-github"></i>
+				</a>
+				<a href="https://www.linkedin.com/in/graham-t-young/" target="blank_">
+					<i class="fa-brands fa-linkedin"></i>
+				</a>
+			</div>
+			
+			<p>This Site was Handcrafted by Me. &copy;2025</p>
 			
 		</footer>
 	</body>
