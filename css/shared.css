@@ -1,22 +1,26 @@
 /* Header */
 header {
-	display: flex;
+	background-image: linear-gradient(to bottom, var(--clr-bg) 97%, rgba(0,0,0,0));
+	position: sticky;
+	top: 0;
+	display: grid;
+	grid-template-columns: 1fr;
 	align-items: center;
 	justify-items: center;
 	width: 100vw;
+	padding: 0.75rem 0;
 }
 
+#logo-container {
+	width: min(15%, 50px);
+}
 .logo {
-	width: 15%;
-	margin: 0 auto;
+	width: 100%;
 }
 
 /* Nav Bar */
 
 nav {
-	background-color: var(--clr-bg);
-	position: sticky;
-	top: 0;
 	display: grid;
 	width: 100vw;
 	align-items: center;
@@ -24,7 +28,7 @@ nav {
 
 }
 nav ul {
-	 width: 75%;
+	 width: min(75%, 500px);
 	 margin: 0 auto;
 	 display: flex;
 	 justify-content: space-around;
@@ -44,3 +48,63 @@ nav ul a {
 }
 
 /* Footer */
+
+footer {
+	width: 100vw;
+	display: grid;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	margin-top: 2rem;
+	gap: 0.75rem;
+}
+
+footer div.social-icons {
+	display: grid;
+	gap 0.25rem;
+	grid-template-columns: 1fr 1fr;
+}
+
+footer div h5 {
+	grid-column: 1/3;
+}
+
+footer i {
+	font-size: var(--fs-h1);
+	color: var(--clr-accent);
+}
+
+
+/* Responsive Design */
+
+
+@media (min-width:900px) {
+
+	/* Header */
+	header {
+		grid-template-columns: 1fr 2fr 1fr;
+		position: sticky;
+		top: 0;
+		
+	}
+	header h1 {
+		grid-column: 2;
+	}
+	.logo-container {
+		width: 100%;
+	}
+	
+	nav {
+		width: 100%;
+		grid-column: 3;
+	}
+	
+	/* Footer */
+
+	footer {
+		grid-template-columns: 1fr 1fr 1fr;
+
+	}
+
+
+}
