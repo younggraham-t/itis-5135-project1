@@ -20,18 +20,23 @@ section#hero p {
 }
 
 section#hero a {
-	background-color: var(--clr-bg);
-	width: 100vw;
+	color: var(--clr-accent);
+	width: 15vw;
 	display: flex;
 	margin: 0 auto;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
 }
+section#hero a:hover {
+	color: var(--clr-secondary);
+}
+
+section#hero a:active {
+	color: var(--clr-primary);
+}
 
 section#hero a i {
-	color: var(--clr-bg);
-	background-color: var(--clr-accent);
 	padding: 0.15rem;
 	border-radius: 50%;
 }
@@ -46,7 +51,12 @@ section#about {
 	margin: 0 auto;
 }
 
+section#about div#about-skills h5 {
+	color: var(--clr-primary);
+}
+
 section#about div#about-skills ul {
+	color: var(--clr-secondary-text);
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 	justify-content: center;
@@ -59,6 +69,9 @@ section#about ul {
 
 
 /* Contact Section */
+section#contact {
+	scroll-margin-top: 100px;
+}
 
 section#contact form {
 	width: 75%;
@@ -99,7 +112,14 @@ section#contact form button {
 	border-radius: 2px;
 	font-size: var(--fs-h6);
 }
+section#contact form button:hover {
+	background-color: var(--clr-secondary);
 
+}
+
+section#contact form button:active {
+	background-color: var(--clr-primary);
+}
 section#contact div.contact-info-container {
 	display: grid;
 }
